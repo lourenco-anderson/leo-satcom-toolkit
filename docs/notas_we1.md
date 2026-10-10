@@ -1,0 +1,4 @@
+Hypotesis list:
+- 	The Earth is a sphere with the mean radius, 6371 km
+
+1. Centralizing the cosntants is required as the whole project has only one source of those constants, in a uniform way, without requiring to have the same data in two different places, saving memory. Also, any change on those constants will be done in a single place, and no need to look for where they are defined elsewhere. If one module uses, for example, the distances in km and another one in m, it can cause error, that is why IS unities are prefered. To detect errors like this the way is to use the unitis in the name of the variables, use a conversion ath the interfaces and not inside core calculations, and dimentional analisys before acoding. 
